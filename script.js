@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         el.classList.toggle("text-muted");
       });
     });
-
+// Eliminar
+    btnEliminar.addEventListener("click", () => {
+      col.remove();
+      tareas = tareas.filter(t => t !== tarea);
+    });
 }})
     
