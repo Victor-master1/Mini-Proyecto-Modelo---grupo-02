@@ -29,4 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnTachar = col.querySelector(".btn-outline-success");
     const btnEliminar = col.querySelector(".btn-outline-danger");
     const btnEditar = col.querySelector(".btn-outline-primary");
-    }})
+    // Tachar
+    btnTachar.addEventListener("click", () => {
+      tarea.completado = !tarea.completado;
+      col.querySelectorAll(".card-title, .card-text, .text-muted").forEach(el => {
+        el.classList.toggle("text-decoration-line-through");
+        el.classList.toggle("text-muted");
+      });
+    });
+
+}})
+    
