@@ -55,6 +55,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tarea.nombre = nuevoNombre.trim();
       tarea.descripcion = nuevaDescripcion.trim();
-      tarea.fecha = nuevaFecha.trim();})
-}})
+      tarea.fecha = nuevaFecha.trim();
+// Remover y volver a renderizar
+      col.remove();
+      crearTarjeta(tarea);
+    });
+
+    grid.appendChild(col);
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("projectName").value.trim();
+    const descripcion = document.getElementById("projectDescription").value.trim();
+    const fecha = document.getElementById("projectDeadline").value;
+
+    if (!nombre) return;
+
+    const nuevaTarea = {
+      nombre,
+      descripcion,
+      fecha,
+      completado: false
+    };
+
+    tareas.push(nuevaTarea);
+    crearTarjeta(nuevaTarea);
+    form.reset();
+  });
+});
+
     
