@@ -42,5 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
       col.remove();
       tareas = tareas.filter(t => t !== tarea);
     });
+// Editar
+    btnEditar.addEventListener("click", () => {
+      const nuevoNombre = prompt("Editar nombre de tarea:", tarea.nombre);
+      if (nuevoNombre === null) return;
+
+      const nuevaDescripcion = prompt("Editar descripción:", tarea.descripcion);
+      if (nuevaDescripcion === null) return;
+
+      const nuevaFecha = prompt("Editar fecha límite (YYYY-MM-DD):", tarea.fecha);
+      if (nuevaFecha === null) return;
+
+      tarea.nombre = nuevoNombre.trim();
+      tarea.descripcion = nuevaDescripcion.trim();
+      tarea.fecha = nuevaFecha.trim();})
 }})
     
