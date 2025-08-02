@@ -13,7 +13,7 @@
 - Elias Amaya (@Elias66-AP)
 - Roxana Matamorros (@rox916)
 - Sebastian Rios (@SebastianRiosMori)
-- William
+- William Alejo (@william-0519)
 
 ---
 
@@ -47,7 +47,7 @@ Tareas priorizadas y seleccionadas para el Sprint:
 | Mostrar tareas en pantalla | Sebastian Rios | Pendiente |
 | Función para tachar tarea | Sebastian Rios | Pendiente |
 | Función para eliminar tarea | Sebastian Rios | Pendiente |
-| Implementar array local (API simulada) | William | Pendiente |
+| Implementar array local (API simulada) | William Alejo | Pendiente |
 | Agregar README básico | Victor Quispe | Pendiente |
 
 ![Sprint Backlog](./img/Captura%20de%20pantalla%202025-08-02%20105844.png)
