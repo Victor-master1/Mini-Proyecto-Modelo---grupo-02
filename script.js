@@ -18,8 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("projectForm");
   const grid = document.getElementById("projectsGrid");
 
-  let tareas = [];
+  let tareas = getTareas(); // Usar localStorage
 
+  tareas.forEach(t => crearTarjeta(t)); // Renderizar desde almacenamiento
+
+  // Crear Tarjeta
   function crearTarjeta(tarea) {
     const col = document.createElement("div");
     col.className = "col";
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="card-body">
           <h5 class="card-title ${tachado}">${tarea.nombre}</h5>
           <p class="card-text ${tachado}">${tarea.descripcion || ""}</p>
-          <p class="text-muted small ${tachado}">Fecha límite: ${tarea.fecha || "Sin definir"}</p>
+          <p class="fecha-tarea small ${tachado}">Fecha límite: ${tarea.fecha || "Sin definir"}</p>
         </div>
         <div class="card-footer text-end">
           <button class="btn btn-sm btn-outline-success me-1"><i class="fas fa-check"></i> Tachar</button>
@@ -44,20 +47,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnTachar = col.querySelector(".btn-outline-success");
     const btnEliminar = col.querySelector(".btn-outline-danger");
     const btnEditar = col.querySelector(".btn-outline-primary");
+    
     // Tachar
     btnTachar.addEventListener("click", () => {
       tarea.completado = !tarea.completado;
-      col.querySelectorAll(".card-title, .card-text, .text-muted").forEach(el => {
+      col.querySelectorAll(".card-title, .card-text, .fecha-tarea").forEach(el => {
         el.classList.toggle("text-decoration-line-through");
         el.classList.toggle("text-muted");
       });
+      guardarTareas(tareas);
     });
-// Eliminar
+
+    // Eliminar
     btnEliminar.addEventListener("click", () => {
       col.remove();
       tareas = tareas.filter(t => t !== tarea);
+      guardarTareas(tareas);
     });
-// Editar
+
+    // Editar
     btnEditar.addEventListener("click", () => {
       const nuevoNombre = prompt("Editar nombre de tarea:", tarea.nombre);
       if (nuevoNombre === null) return;
@@ -71,7 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
       tarea.nombre = nuevoNombre.trim();
       tarea.descripcion = nuevaDescripcion.trim();
       tarea.fecha = nuevaFecha.trim();
-// Remover y volver a renderizar
+
+      guardarTareas(tareas);
+    
+      // Remover y volver a renderizar
       col.remove();
       crearTarjeta(tarea);
     });
@@ -96,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     tareas.push(nuevaTarea);
+    postTarea(nuevaTarea);
     crearTarjeta(nuevaTarea);
     form.reset();
   });
