@@ -1,3 +1,18 @@
+// Simulación de API local usando localStorage
+function getTareas() {
+  return JSON.parse(localStorage.getItem("tareas")) || [];
+}
+
+function postTarea(tarea) {
+  const tareas = getTareas();
+  tareas.push(tarea);
+  localStorage.setItem("tareas", JSON.stringify(tareas));
+}
+
+function guardarTareas(tareas) {
+  localStorage.setItem("tareas", JSON.stringify(tareas));
+}
+
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("projectForm");
