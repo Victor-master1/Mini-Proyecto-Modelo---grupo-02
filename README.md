@@ -16,7 +16,7 @@
 | 🧠 Scrum Master       | Víctor Quispe Curo            |[@Victor-master1](https://github.com/Victor-master1) |
 | ⚙️ Product Owner      | Leonel Contreras              |[@Leonel Contreras](https://github.com/ct-leo)|
 | 🎨 Dev Team (JS)      | Sebastian Rios                |[@SebastianRiosMori](https://github.com/SebastianRiosMori) |
-| 🛠️ Dev Team (JS)      | William                       | 
+| 🛠️ Dev Team (JS)      | William Alejo                 |[@william-0519](https://github.com/william-0519)|
 | 🎨 Dev Team (CSS)     | Roxana Matamoros              |[@rox916](https://github.com/rox916) |
 | 🎨 Dev Team (HTML)    | Elias Amaya                   |[@Elias66-AP](https://github.com/Elias66-AP) |
 
@@ -78,6 +78,6 @@ Sigue nuestro flujo Scrum en Trello:
 
 ## 🌐 Enlace a la Página Web
 
-🔗 **[Visita nuestro sitio aquí](https://victor-master1.github.io/listadetareasgrupo2/)**
+🔗 **[Visita nuestro sitio aquí](https://victor-master1.github.io/Mini-Proyecto-Modelo---grupo-02/)**
 
 ---
