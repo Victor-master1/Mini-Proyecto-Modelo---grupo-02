@@ -123,7 +123,7 @@ Sigue nuestro flujo Scrum en Trello:
 
 1. Clona el repositorio:
 bash
-git clone https://github.com/Victor-master1/Mini-Proyecto-Modelo---grupo-02
+git clone https://github.com/Victor-master1/Mini-Proyecto-Modelo---grupo-02.git
 
 2. Abre index.html en tu navegador (usa Live Server si prefieres).
 
