@@ -3,9 +3,15 @@
 
 ---
 
-# 🚀 Equipo de scrum - Grupo 2
+# 🎯 Objetivo General - Grupo 2
 
   Aplicar SCRUM, GitHub y desarrollo web colaborativo para entregar una To-do List funcional sencilla, trabajando en equipo en un Sprint de 1 día.
+
+---
+
+# 🚀 Sprint Goal
+
+> Entregar una aplicación web funcional tipo To-do List, que permita al usuario *agregar, tachar y eliminar tareas*, simulando una API con un array local, y aplicando prácticas de trabajo colaborativo con GitHub y Scrum.
 
 ---
 
@@ -30,7 +36,6 @@ Este proyecto es una aplicación web sencilla para mostrar perfiles individuales
 - 🌐 Publicar contenido usando GitHub Pages.
 - 🔀 Usar ramas y merges correctamente.
 - 🛠️ Resolver conflictos reales en un entorno colaborativo.
-- 
 
 ---
 
@@ -40,33 +45,33 @@ Este proyecto es una aplicación web sencilla para mostrar perfiles individuales
 - Coordinación general y manejo de tiempos.
 - Creacion del Repositorio de   GitHub
 - Supervisión de ramas, commits y merges.
-- Revisión del `README.md` y despliegue en GitHub Pages.
+- Revisión del README.md y despliegue en GitHub Pages.
 
 ### ⚙️ Leonel Contreras (Product Owner)
 - Definir y comunicar la vision del proyecto.
 - Crear y priorizar el Sprint backlog.
 - Participar activamente en las reuniones de scrum.
+- Validar el diseño final del proyecto.
 
-### 🎨 Sebastian Rios (Dev Team - Java Script)
-- Maquetación y estructura visual (HTML/CSS).
-- Edición de perfiles y estructura del sitio.
-- Corrección de errores visuales.
+### 🛠️ Sebastian Rios (Dev Team - Java Script)
+- Validar formulario con JS.
+- Integración de su sección al sitio.
+- Participación activa en reuniones.
 
 ### 🛠️ William (Dev Team - JavaScript)
 - Lógica en JavaScript.
 - Testing de funcionalidades.
-- Documentación técnica.
+- Participación activa en reuniones.
 
 ### 🎨 Roxana Matamoros (Dev Team - CSS)
-- Perfil personal con estilo.
+- Modificar la interfaz con estilos.
 - Commits ordenados y limpios.
 - Participación activa en reuniones.
 
-### 🎨 Elias Amaya (Dev Team - HTML/CSS)
+### 🎨 Elias Amaya (Dev Team - HTML)
 - Creación del archivo 
-- Diseño responsive y pruebas.
+- Diseño de la interfaz.
 - Integración de su sección al sitio.
-
 ---
 
 ## 📌 Tablero de Trabajo (Trello)
