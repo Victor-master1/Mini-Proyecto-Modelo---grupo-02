@@ -50,7 +50,7 @@ Tareas priorizadas y seleccionadas para el Sprint:
 | Implementar array local (API simulada) | William Alejo | Pendiente |
 | Agregar README básico | Victor Quispe | Pendiente |
 
-![Sprint Backlog](./img/Captura%20de%20pantalla%202025-08-02%20105844.png)
+![Sprint Backlog](./img/Captura%20de%20pantalla%202025-08-04%20083115.png)
 
 ---
 
