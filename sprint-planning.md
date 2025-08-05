@@ -11,7 +11,7 @@
 
 **👥 Developers:** 
 - Elias Amaya (@Elias66-AP)
-- Roxana Matamorros (@rox916)
+- Roxana Matamoros (@rox916)
 - Sebastian Rios (@SebastianRiosMori)
 - William Alejo (@william-0519)
 
